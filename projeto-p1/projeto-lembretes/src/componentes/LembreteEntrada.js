@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./LembreteEntrada.css"
 
 const LembreteEntrada = () => {
 
@@ -24,8 +25,8 @@ const LembreteEntrada = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="lembrete" placeholder="Digite seu novo lembrete" value={lembrete} onChange={handleLembrete} />
-        <input type="submit" value="OK" />
+        <input className='input' type="text" name="lembrete" placeholder="Digite seu novo lembrete" value={lembrete} onChange={handleLembrete} />
+        <input className='button' type="submit" value="OK" />
       </form>
     </div>
   )

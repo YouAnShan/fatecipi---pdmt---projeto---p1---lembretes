@@ -1,0 +1,25 @@
+.input{
+  display: block;
+  background-color: #FFFFFF;
+  border: solid 1px #D0D0D0;
+  box-shadow: #D0D0D0 0 4px 0;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 6px;
+  color: #202020;
+  margin-bottom: 15px;
+  outline: none;
+  width: 100%;
+}
+
+.button {
+  background-color: #fd627c;
+  border: solid 1px #f14763;
+  box-shadow: #f14763 0 4px 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #FAFAFF;
+  cursor: pointer;
+  transition: 0.1s;
+  width: 100%;
+  }
