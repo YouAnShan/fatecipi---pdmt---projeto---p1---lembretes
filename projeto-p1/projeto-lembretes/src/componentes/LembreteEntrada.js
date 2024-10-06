@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./LembreteEntrada.css"
 
-const LembreteEntrada = () => {
+const LembreteEntrada = ({adicionarLembrete}) => {
 
   // Hook useState
   const [lembrete, setLembrete] = useState("");
@@ -11,15 +11,17 @@ const LembreteEntrada = () => {
     setLembrete(event.target.value);
   };
 
-  // quando o formulário é submetido, a página não é recarregada e o lembrete criado é exibido no console. 
+  // quando o formulário é submetido, a página não é recarregada e o lembrete criado é exibido na lista. 
   const handleSubmit = (event) => {
+    
     event.preventDefault();
-    console.log(lembrete);
+
+    // aqui ficará a lógica para enviar o lembrete para uma lista de lembrentes. 
+    adicionarLembrete(lembrete);
 
     // limpando o formulário após o envio
     setLembrete("");
 
-    // aqui ficará a lógica para enviar o lembrete para uma lista de lembrentes. 
   };
 
   return (
